@@ -79,6 +79,7 @@ $(document).ready(function(){
 
     $('.clients-story__client').on('click', function(e) {
         if (e.target.classList.contains('clients-story__show')) {
+            
             console.log(e.target.previousElementSibling);
             e.target.previousElementSibling.style.height = 'auto';
             e.target.style.display = 'none';
@@ -107,6 +108,23 @@ $(document).ready(function(){
         }
     });
 
+    // FORM POPUP 
+        $('.js-table-cell').on('click', function(e) {
+
+        var popup = $('.form-popup');
+        var popupContent = $('.form-popup__content');
+       
+        popup.addClass('form-popup_visible');
+
+        popup.on('click', function(e) {
+
+        popup.removeClass('form-popup_visible');
+
+        e.preventDefault();
+
+        });
+        e.preventDefault();
+    });
     // YOUTUBE OVERLAY
 
     $('.clients-story__video').on('click', function(e) {

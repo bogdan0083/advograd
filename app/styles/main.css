@@ -359,7 +359,7 @@ body {
 	font-weight: 300;
 }
 .main {
-	width: 1200px;
+	min-width: 1200px;
 	margin: 0 auto;
 }
 a {
@@ -651,7 +651,7 @@ a {
 .header {
 	min-height: 740px;
 	position: relative;
-	background: url("../images/header-bg.jpg") bottom/100%;
+	background: url("../images/header-bg.jpg") bottom/1200px;
 	box-shadow: 0 4px 4px -2px rgba(4,8,12,0.83);
 }
 .header__in {
@@ -672,7 +672,7 @@ a {
 	border-width: 41px 44px 41px 0;
 	border-color: transparent #fff transparent transparent;
 	top: 50%;
-	left: 168px;
+	left: 14%;
 	margin-top: -41px;
 }
 .mega-slider__control-right {
@@ -683,7 +683,7 @@ a {
 	border-width: 41px 0 41px 44px;
 	border-color: transparent transparent transparent #fff;
 	top: 50%;
-	right: 178px;
+	right: 17%;
 	margin-top: -41px;
 }
 .mega-slide {
@@ -802,7 +802,7 @@ a {
 	width: 758px;
 	height: 48px;
 	margin: -78px auto 0;
-	background: url("../images/nav-bg.jpg") no-repeat bottom/cover;
+	background: url("../images/nav-bg.jpg") no-repeat bottom/100%;
 	position: relative;
 	z-index: 1000;
 	padding-top: 30px;
@@ -831,6 +831,7 @@ a {
 	background: url("../images/footer-bg.jpg") no-repeat 0 0/100%;
 }
 .footer__in {
+	margin: 0 auto;
 	width: 1148px;
 	overflow: hidden;
 	padding: 0 40px;
@@ -1105,7 +1106,7 @@ a {
 	font-weight: 300;
 }
 .lawyer-person {
-	background: url("../images/lawyer-bg.jpg") no-repeat;
+	background: url("../images/lawyer-bg.jpg") no-repeat center/100%;
 	min-height: 575px;
 	padding: 120px 80px 50px 80px;
 }
@@ -1230,7 +1231,7 @@ a {
 	border-right: none;
 }
 .tariff__table-row_last .tariff__table-cell:hover {
-	background-color: #18a421 !important;
+	background-color: #2ccc37 !important;
 }
 .tariff__table-row_last .tariff__table-cell a {
 	font-family: "Roboto", sans-serif;
@@ -1243,11 +1244,17 @@ a {
 	font-size: 16px;
 	font-weight: 300;
 }
+.tariff__table-row_last .tariff__table-cell_get-family {
+	background-color: #18a421 !important;
+}
+.tariff__table-row_last .tariff__table-cell_get-family:hover {
+	background-color: #1ab224 !important;
+}
 .tariff__table-row .tariff__table-header {
 	background-color: #f9f8f4;
 	font-size: 28px;
 	height: 90px;
-	border: 1px solid #c9c9c9;
+	border: 1px solid #e1e0de;
 	border-bottom: none;
 	position: relative;
 }
@@ -1292,8 +1299,8 @@ a {
 	text-align: center;
 	font-size: 15px;
 	font-weight: 300;
-	border-left: 1px solid #c9c9c9;
-	border-right: 1px solid #c9c9c9;
+	border-left: 1px solid #e1e0de;
+	border-right: 1px solid #e1e0de;
 }
 .tariff__table-row .tariff__table-cell_price {
 	height: 75px;
@@ -1315,12 +1322,13 @@ a {
 	position: relative;
 }
 .tariff__table-row .tariff__table-cell:first-child:after {
-	content: "-----------------------------------------------";
+	content: "-----------------------------------------";
 	display: block;
 	position: absolute;
 	left: 0;
 	bottom: -10px;
 	color: #cfcfce;
+	letter-spacing: 1px;
 }
 .tariff__table-row:nth-child(2n) .tariff__table-cell {
 	background-color: #eeede8;
@@ -1389,6 +1397,7 @@ a {
 }
 .clients-story__in {
 	width: 1148px;
+	margin: 0 auto;
 	padding-left: 45px;
 }
 .clients-story__in:before, .clients-story__in:after {
@@ -1664,6 +1673,25 @@ a {
 	display: block;
 }
 .youtube-overlay__content {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -157.5px;
+	margin-left: -210px;
+}
+.form-popup {
+	position: fixed;
+	background-color: rgba(0,0,0,0.6);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: none;
+	z-index: 1000;
+}
+.form-popup_visible {
+	display: block;
+}
+.form-popup__content {
 	position: absolute;
 	left: 50%;
 	top: 50%;
