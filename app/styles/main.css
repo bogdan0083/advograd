@@ -822,6 +822,9 @@ a {
 	letter-spacing: 1px;
 	font-weight: 400;
 }
+.nav__link:hover {
+	text-decoration: underline;
+}
 .nav__link_active {
 	border-bottom: 7px solid #000;
 	padding-bottom: 7px;
@@ -885,6 +888,9 @@ a {
 	margin-left: 32px;
 	font-weight: 500;
 }
+.footer__link:hover {
+	text-decoration: underline;
+}
 .questions {
 	min-height: 770px;
 	background: #fff url("../images/questions-bg.jpg") no-repeat 0 -420px/100%;
@@ -919,6 +925,7 @@ a {
 	transition: opacity 0.4s linear;
 	height: 0;
 	opacity: 0;
+	pointer-events: none;
 }
 .questions-block_active {
 	opacity: 1;
@@ -1441,6 +1448,7 @@ a {
 	transition: opacity 0.4s linear;
 	height: 0;
 	opacity: 0;
+	overflow: hidden;
 }
 .clients-story__client_active {
 	opacity: 1;
