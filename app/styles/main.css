@@ -1338,6 +1338,10 @@ a {
 .faq {
 	padding: 150px 0 100px;
 }
+.faq__in {
+	width: 1148px;
+	margin: 0 auto;
+}
 .faq__heading, .faq__text {
 	text-align: center;
 	margin: 0 auto;
