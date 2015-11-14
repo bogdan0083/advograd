@@ -798,6 +798,9 @@ a {
 	text-decoration: none;
 	letter-spacing: 1px;
 }
+.mega-slide__btn:hover {
+	background: #3d3d3d;
+}
 .nav {
 	width: 758px;
 	height: 48px;
@@ -870,8 +873,13 @@ a {
 	line-height: 50px;
 	font-weight: 100;
 	text-align: center;
+	transition: color, background 0.2s;
 	float: right;
 	border: 1px solid #3c3c3c;
+}
+.footer__call:hover {
+	color: #eae3d3;
+	background: #3c3c3c;
 }
 .footer__nav {
 	clear: right;
@@ -1090,6 +1098,9 @@ a {
 	margin-bottom: 20px;
 	display: block;
 }
+.slider_row .slide__write:hover {
+	color: #706563;
+}
 .lawyer {
 	background-color: #eae3d3;
 	text-align: center;
@@ -1113,6 +1124,9 @@ a {
 	margin: 0 auto;
 	font-size: 20px;
 	font-weight: 300;
+}
+.lawyer__btn:hover {
+	background: #3d3d3d;
 }
 .lawyer-person {
 	background: url("../images/lawyer-bg.jpg") no-repeat center/100%;
@@ -1198,6 +1212,9 @@ a {
 	margin: 0 auto;
 	font-size: 20px;
 	font-weight: 300;
+}
+.subscription__btn:hover {
+	background: #3d3d3d;
 }
 .content-group {
 	background: url("../images/content-bg.jpg") no-repeat 0 830px/100%;
