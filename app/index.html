@@ -47,7 +47,7 @@
                   <p class="mega-slide__logo">advogrand</p>
                   <h2 class="mega-slide__heading">24ч в сутки</h2>
                   <p class="mega-slide__desc">телефонные переговоры в стрессовых ситуациях,пошаговые инструкции с документами на почту</p>
-                  <a href="https://app.getresponse.com/site2/salkovms?u=BOmfg&webforms_id=1607501" class="mega-slide__btn">задать вопрос</a>
+                  <a href="#" id="showform" class="mega-slide__btn">задать вопрос</a>
                 </div>
               </div>
               <div class="mega-slider__slide mega-slide mega-slide_support">
@@ -67,7 +67,7 @@
                   <p class="mega-slide__logo">advogrand</p>
                   <h2 class="mega-slide__heading">Ответ</h2>
                   <p class="mega-slide__desc">на любой вопрос: имущество, гибдд, банки,кредиты, просроченные продукты и другое</p>
-                  <a href="znaisvoiprava.ru#callbackhunter" class="mega-slide__btn">Задать вопрос</a>
+                  <a href="#" class="mega-slide__btn">Задать вопрос</a>
                 </div>
               </div>
               <div class="mega-slider__slide mega-slide mega-slide_law">
@@ -163,7 +163,6 @@
             </ul>
           </div>
         <div class="questions__slider slider_row">
-            <div class="slider_row__shadow"></div>
             <div class="slider_row__wrap">
             <div class="slider_row__slide slide">
               <div class="slide__circle slide__circle_leila">
@@ -630,6 +629,21 @@
     <script src="scripts/main.js"></script>
     <script src="scripts/slick.min.js"></script>
     <script src="scripts/jquery.mCustomScrollbar.min.js"></script>
+    <script type="text/javascript" src="https://app.getresponse.com/view_webform_v2.js?u=BOmfg&webforms_id=1607501">
+      {
+       "name": "webform"
+      }
+}
+    </script>
+    <script type="text/javascript">
+    var myform = GRWF2.get("webform"),
+    elem = document.getElementById('showform');
+    element.addEventListener('click', function(){
+
+      myform.show();
+
+    });
+    </script>
     <script type="text/javascript" src="//cdn.callbackhunter.com/cbh.js?hunter_code=d77f942576b678f4a4dd5535d68a0cd1" charset="UTF-8"></script>
   <!-- endbuild -->
   </body>

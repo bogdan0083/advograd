@@ -28,12 +28,6 @@ $(document).ready(function(){
         });
     })(jQuery);
 
-    // $('.slider_row').on('scroll', function(e) {
-    //     var slider = $('slider_row');
-    //     console.log(slider.scrollLeft());
-    //     $('.slider_row__shadow').css('left', $('.slider_row').scrollLeft() + 500 - 130 + 'px' )
-    // });
-    
 
     // QUESTIONS SLIDER DYNAMIC CHANGE
     $('.slider_row').on('click', function(e) {
